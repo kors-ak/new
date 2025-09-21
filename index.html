@@ -3,62 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Интернет-магазин</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Мини-игры</title>
 </head>
 
 <body>
-  <header>
-    <a href="index.html"><img src="images/logo.svg" alt="Логотип компании"></a>
-    <input type="text">
-    <nav>
-      <ul>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="cart.html">Корзина</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section>
-    <h1>Всё, чего заслуживает ваш дом</h1>
-    <p>Наша мебель - ваше отражение</p>
-    <a href="catalog.html">Перейти в каталог</a>
+  <section class="top center">
+    <h1 class="top__title">Добро пожаловать на&nbsp;мой сайт мини-игр</h1>
+    <p class="top__description">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <span>«Поехали!»</span> и <span>приступай</span>.</p>
+    <a class="top__button" href="#about">Поехали!</a>
+    <a class="top__button-mobile" href="#mini-games">Поехали!</a>
+    <div class="top__container">
+      <div class="top__animated">
+        <a class="top__string" href="#quiz">Викторина</a>
+        <a class="top__string" href="#guess-number">Угадай число</a>
+        <a class="top__string" href="#text-turn">Переверни текст</a>
+        <a class="top__string" href="#arithmetic">Простая арифметика</a>
+        <a class="top__string" href="#rock-paper-scissors">Камень, ножницы, бумага</a>
+        <a class="top__string" href="#colour-generator">Генератор случайных цветов</a>
+        <a class="top__string" href="#quiz">Викторина</a>
+        <a class="top__string" href="#guess-number">Угадай число</a>
+        <a class="top__string" href="#text-turn">Переверни текст</a>
+        <a class="top__string" href="#arithmetic">Простая арифметика</a>
+        <a class="top__string" href="#rock-paper-scissors">Камень, ножницы, бумага</a>
+        <a class="top__string" href="#colour-generator">Генератор случайных цветов</a>
+      </div>
+    </div>
+  </section>
+  
+  <section class="about center" id="about">
+    <h2 class="about__title">Об играх</h2>
+    <p>В моей коллекции представлено 6 игр на разные темы. <br>Игры несложные — в них может поиграть каждый. <br>Все игры доступны для пользования.
+    </p>
+    <div class="about__content">
+      <a class="card-mini" href="#guess-number">
+        <img src="./img/content/game1.svg" alt="угадай число">
+        <div class="card-mini__description">
+          <p class="card-mini__number">Игра №1</p>
+          <h3 class="card-mini__name">Угадай число</h3>
+        </div>
+      </a>
+      
+      <a class="card-mini" href="#arithmetic">
+        <img src="./img/content/game2.svg" alt="простая арифметика">
+        <div class="card-mini__description">
+          <p class="card-mini__number">Игра №2</p>
+          <h3 class="card-mini__name">Простая арифметика</h3>
+        </div>
+      </a>
+      
+      <a class="card-mini" href="#text-turn">
+        <img src="./img/content/game3.svg" alt="переверни текст">
+        <div class="card-mini__description">
+          <p class="card-mini__number">Игра №3</p>
+          <h3 class="card-mini__name">Переверни текст</h3>
+        </div>
+      </a>
+      
+      <a class="card-mini" href="#rock-paper-scissors">
+        <div class="back">
+          <img class="back" src="./img/content/game4.svg" alt="камень, ножницы, бумага">
+          <img class="front" src="./img/content/game4-add.png" alt="камень">
+        </div>
+        <div class="card-mini__description">
+          <p class="card-mini__number">Игра №4</p>
+          <h3 class="card-mini__name">Камень, ножницы, бумага</h3>
+        </div>
+      </a>
+      
+      <a class="card-mini" href="#quiz">
+        <img src="./img/content/game5.svg" alt="простая викторина">
+        <div class="card-mini__description">
+          <p class="card-mini__number">Игра №5</p>
+          <h3 class="card-mini__name">Простая викторина</h3>
+        </div>
+      </a>
+      
+      <a class="card-mini" href="#colour-generator">
+        <img src="./img/content/game6.svg" alt="генератор случайных цветов">
+        <div class="card-mini__description">
+          <p class="card-mini__number">Игра №6</p>
+          <h3 class="card-mini__name">Генератор случайных цветов</h3>
+        </div>
+      </a>
+    </div>
   </section>
 
-  <section>
-    <h2>Специальные предложения</h2>
-    <article>
-      <img src="images/product1.jpg" alt="Товар 1">
-      <h3>Кресло VILORA</h3>
-      <p>Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань</p>
-      <p>21 000</p>
-      <p>28 000</p>
-    </article>
+  <section class="mini-games center" id="mini-games">
+    <h2 class="about__title">Мини-игры</h2>
+    <div class="mini-games__content">
+      <article class="card" id="guess-number">
+        <img src="./img/content/game1.svg" alt="угадай число">
+        <div class="card__description">
+          <h3 class="card__name">Угадай число</h3>
+          <p class="card__text">Попробуй угадать случайное число&nbsp;от&nbsp;1&nbsp;до&nbsp;100.</p>
+          <a class="card__button" href="./all-games/guess-number.html">Играть!</a>
+        </div>
+      </article>
+      
+      <article class="card" id="arithmetic">
+        <img src="./img/content/game2.svg" alt="простая арифметика">
+        <div class="card__description">
+          <h3 class="card__name">Простая арифметика</h3>
+          <p class="card__text">Попробуй решить простые арифметические задачи.</p>
+          <a class="card__button" href="./all-games/arithmetic.html">Играть!</a>
+        </div>
+      </article>
+      
+      <article class="card" id="text-turn">
+        <img src="./img/content/game3.svg" alt="переверни текст">
+        <div class="card__description">
+          <h3 class="card__name">Переверни текст</h3>
+          <p class="card__text">Попробуй ввести текст, который будет&nbsp;перевернут.</p>
+          <a class="card__button" href="./all-games/text-turn.html">Играть!</a>
+        </div>
+      </article>
+   
+      <article class="card" id="quiz">
+        <img src="./img/content/game5.svg" alt="простая викторина">
+        <div class="card__description">
+          <h3 class="card__name">Викторина</h3>
+          <p class="card__text">Отвечай на вопросы викторины с&nbsp;вариантами ответов.</p>
+          <a class="card__button" href="./all-games/quiz.html">Играть!</a>
+        </div>
+      </article>
+      
+      <article class="card" id="rock-paper-scissors">
+        <div class="back">
+          <img src="./img/content/game4.svg" alt="камень, ножницы, бумага">
+          <img class="front" src="./img/content/game4-add.png" alt="камень">
+        </div>
+        <div class="card__description">
+          <h3 class="card__name">Камень, ножницы, бумага</h3>
+          <p class="card__text">Сыграй в популярную игру против&nbsp;компьютера.</p>
+          <a class="card__button" href="./all-games/rock-paper-scissors.html">Играть!</a>
+        </div>
+      </article>
+      
+      <article class="card" id="colour-generator">
+        <img src="./img/content/game6.svg" alt="генератор случайных цветов">
+        <div class="card__description">
+          <h3 class="card__name">Генератор случайных цветов</h3>
+          <p class="card__text">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+          <a class="card__button" href="./all-games/colour-generator.html">Играть!</a>
+        </div>
+      </article>
+    </div>
   </section>
 
-  <footer>
-    <h4>Меню</h4>
-    <nav>
-      <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="cart.html">Корзина</a></li>
-      </ul>
-    </nav>
-    <h4>Контакты</h4>
-    <ul>
-      <li><a href="tel:+7 908 800 80 80">+7 908 800 80 80</a></li>
-      <li><a href="mailto:help@interier.com">help@interier.com</a></li>
-      <li><a href="https://www.vk.com"><img src="images/vk.svg" alt="Ссылка на ВК"></a></li>
-      <li><a href="https://web.telegram.org"><img src="images/telegram.svg" alt="Ссфлка на наш телеграм"></a></li>
-      <li><a href="https://www.dzen.ru"><img src="images/dzen.svg" alt="Ссылка на Дзен"></a></li>
-    </ul>
-    <form action="">
-      <p>Получайте наши новости и обновления</p>
-      <input type="email" name="email" id="" placeholder="ваш email">
-      <button type="submit">Подписаться</button>
-    </form>
+  <footer class="footer center">
+    <h2 class="footer__title">Все права защищены.</h2>
   </footer>
-</body>
 
+  <!-- <script src="./js-homeworks/hw-2.js"></script> -->
+  <!-- <script src="./js-homeworks/hw-3.js"></script> -->
+  <!-- <script src="./js-homeworks/hw-4.js"></script> -->
+  <!-- <script src="./js-homeworks/hw-5.js"></script> -->
+  <!-- <script src="./js-homeworks/hw-6.js"></script> -->
+  <!-- <script src="./js-homeworks/hw-7.js"></script> -->
+  <!-- <script src="./js-homeworks/hw-8.js"></script> -->
+  
+</body>
 </html>

@@ -1,0 +1,341 @@
+@media (max-width: 1240px) {
+  .center {
+    padding-left: calc(50% - 480px);
+    padding-right: calc(50% - 480px);
+  }
+
+  .top {
+    min-height: 720px;
+  }
+
+  .about {
+    .card-mini {
+
+      &:nth-child(6n+6),
+      &:nth-child(6n+4) {
+        margin-top: 0px;
+      }
+
+      &:nth-child(6n+3) {
+        margin-top: -39px;
+      }
+
+      &:nth-child(6n+5) {
+        margin-top: -117px;
+      }
+    }
+  }
+
+  .mini-games {
+    .card {
+      &__description {
+        padding: 29.04px 29.04px 32.67px 29.04px;
+        gap: 16px;
+      }
+
+      &__name {
+        max-width: 382px;
+        font-size: 40px;
+        line-height: 46px;
+      }
+
+      &__button {
+        height: 55px;
+      }
+    }
+  }
+}
+
+// Планшет
+@media (max-width: 1024px) {
+
+  h1,
+  h2 {
+    font-size: 48px;
+    line-height: 49px;
+  }
+
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 147px;
+    padding-bottom: 182px;
+    background-image: url(./img/decoration/stars-small-1.svg), url(./img/decoration/star-big-3.svg), url(./img/decoration/stars-small-2.svg);
+    background-position: 37px 64px, calc(100% + 91px) -87px, calc(100% - 34px) calc(100% - 79px);
+
+    &__title {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    &__button {
+      display: none;
+
+      &-mobile {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 247px;
+        height: 66px;
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+      }
+    }
+
+    .tohomepage {
+      margin-left: -8px;
+    }
+
+    &__animated {
+      animation: scrollTextTablet 24s linear infinite;
+    }
+
+    &__string {
+      margin-top: 16px;
+      margin-bottom: 16px;
+      font-size: 24px;
+      line-height: 100%;
+      letter-spacing: 4%;
+
+      &::after {
+        top: -6px;
+        scale: 0.8;
+      }
+    }
+  }
+
+  .about {
+    display: none;
+  }
+
+  .mini-games {
+    .card {
+      &__name {
+        font-size: 32px;
+        line-height: 39px;
+      }
+
+      &__text {
+        font-size: 20px;
+        line-height: 20px;
+      }
+
+      &__button {
+        height: 55px;
+        width: 100%;
+        font-size: 20px;
+        margin-top: 16px;
+      }
+    }
+  }
+
+  .game6 {
+    background-image: url(./img/decoration/stars-small-1-transp.svg), url(./img/decoration/star-big-3-transp.svg), url(./img/decoration/stars-small-2-transp.svg);
+  }
+}
+
+@media (max-width: 833px) {
+  .center {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .top {
+    min-height: 100vw;
+
+    &__button {
+      display: none;
+
+      &-mobile {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 285px;
+        height: 66px;
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+      }
+    }
+  }
+
+  .mini-games {
+    padding-top: 48.34px;
+    background: rgb(32, 32, 39);
+    padding-bottom: 48px;
+
+    &__content {
+      margin-top: 48px;
+      gap: 24px;
+    }
+
+    .about__title {
+      font-size: 40px;
+      line-height: 49px;
+    }
+
+    .card {
+      &__text {
+        font-size: 16px;
+      }
+
+      &__button {
+        font-size: 16px;
+
+        &:hover {
+          background: rgb(32, 32, 39);
+          color: rgb(255, 255, 255);
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding: 40px 0;
+
+    &__title {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+
+
+
+// Телефон
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .top {
+    &__title {
+      font-size: 40px;
+    }
+
+    p {
+      margin-bottom: 36px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__button-mobile {
+      width: 285px;
+      height: 55px;
+      border: 1px solid rgb(32, 32, 39);
+      border-radius: 60px;
+      background: rgb(32, 32, 39);
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 141.69%;
+    }
+
+    .tohomepage {
+      margin-left: 0;
+      margin-top: 8px;
+      font-size: 16px;
+
+      img {
+        display: none;
+      }
+    }
+
+    &__animated {
+      padding-left: 32px;
+      gap: 90px;
+      animation: scrollTextMobile 24s linear infinite;
+    }
+
+    &__string {
+      margin-top: 16px;
+      margin-bottom: 16px;
+      font-size: 16px;
+      line-height: 17.6px;
+
+      &::after {
+        right: -64px;
+        top: -10px;
+        scale: 0.55;
+      }
+    }
+  }
+
+  .mini-games {
+    &__content {
+      align-items: center;
+    }
+
+    .card {
+      flex-direction: column;
+      max-width: 420px;
+
+      img,
+      .back {
+        width: 100%;
+        margin-bottom: -1px;
+      }
+
+      &__description {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .top {
+    p {
+      max-width: 296px;
+    }
+  }
+}
+
+@media (max-width: 296px) {
+
+  .top__button-mobile,
+  .card {
+    width: 96%;
+  }
+
+  .mini-games .about__title {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .mini-games .card__name {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .top__title {
+    width: auto;
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .top__container {
+    display: none;
+  }
+}
